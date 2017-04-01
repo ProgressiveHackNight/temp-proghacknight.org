@@ -1,0 +1,248 @@
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    background: rgba(0,0,0,1);
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 74%, rgba(14,22,44,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(74%, rgba(0,0,0,1)), color-stop(100%, rgba(14,22,44,1)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 74%, rgba(14,22,44,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 74%, rgba(14,22,44,1) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 74%, rgba(14,22,44,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 74%, rgba(14,22,44,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0e162c', GradientType=0 );
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    color: white;
+    z-index: 1;
+    text-align: center;
+    left: 50%;
+    top:45%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img.logo {
+    width:auto;
+    left: 50%;
+    z-index: -1;
+    -webkit-animation:spin 60s linear infinite;
+    -moz-animation:spin 60s linear infinite;
+    animation:spin 60s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
+#name p {
+    font-size: 72px;
+    line-height: 85px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    white-space:nowrap;
+
+}
+
+
+#name p:last-child {
+    font-weight: 200;
+    color: #50E3C2;
+    
+}
+
+#dsc {
+    font-size: 28px;
+    font-weight: 300;
+
+}
+
+#host a{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+a.btn {
+    background: #0C1225;
+    border: 3px solid #50E3C2;
+    border-radius: 100px;
+    padding: 10px 35px;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: -0.24px;
+    text-decoration: none;
+    white-space:nowrap;
+    color: white;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+a.btn:hover {
+    background: #50E3C2;
+}
+
+input.btn, input.slack{
+    font-family: 'Montserrat', sans-serif;    
+    background: #0C1225;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 10px 10px;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: -0.24px;
+    text-decoration: none;
+    /* white-space: nowrap; */
+    color: white;
+    margin: 5px;
+    clear: both;
+    width: 105%;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+input.btn:hover, input.slack:hover{
+        background: #E32072;
+
+}
+
+form {
+    width: 395px;
+}
+
+input[type="text"] {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    background: #0C1225;
+    border: 1px solid rgba(255,255,255,0.50);
+    border-radius: 4px;
+    padding: 10px 10px;
+    font-size: 20px;
+    color: rgba(255,255,255,0.50);
+    letter-spacing: -0.24px;
+    text-decoration: none;
+    /* white-space: nowrap; */
+    color: white;
+    margin: 5px;
+    clear: both;
+    width: 100%;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+input[type="text"]:hover {
+    border: 1px solid #E32072;
+    font-weight: 300;
+    color: white;
+}
+
+
+div#btn {
+    margin: 40px 0px;
+}
+
+.slack {
+    border: 3px solid #E32072 !important;
+}
+
+.slack:hover {
+    background-color: #E32072 !important;
+}
+
+#host {
+    width: 100%;
+    bottom: 0px;
+    color: rgba(255,255,255,0.50);
+    font-size: 18px;
+}
+
+.pitch:last-child {
+    font-size: 18px;
+}
+
+
+
+@media only screen and (max-device-width: 480px) {
+    
+    .centered {
+        position: relative;
+        top: inherit;
+        left: inherit;
+        transform: none;
+    }
+    
+    .wrapper{
+        left: inherit;
+        padding: 40px 0;
+        width: calc(100% - 0px);
+        height: 100%;
+        top: 0px;
+    }
+    
+    #name p{
+        font-size: 42px;
+        line-height: 60px;
+    }
+    
+    #dsc {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    
+    a.btn {
+        clear: both;
+        line-height: 60px;
+        margin: 0;
+        padding: 10px 30%;
+    }
+    
+    form {
+    width: 315px;
+    margin: 0 auto;
+    }
+
+    input[type="text"] {
+    width: 90%;
+        
+    }
+    
+    input.btn, input.slack {
+    width: 95%;
+}
+    
+    .nospace{
+        margin: 0;
+        padding: 0;
+    }
+}
+
